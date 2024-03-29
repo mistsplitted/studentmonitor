@@ -1,31 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>WEB</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TAPCG</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Login</a></li>
-                <li><a href="">About</a></li>
-            </ul>
-        </nav>
-    </header>
-<main>
-    <form action="home.html">
-        <input type="text" name="username">
-        <input type="text" name="password">
-        <button type="submit">Log In</button>
-    </form>
-    <form action="register.html">
-        <button type="submit">Register</button>
-    </form>
-</main>
-<footer>
-    @Footer ni web, 2024
-</footer>
+    <div class="wrapper">
+        <form action="">
+            <h1>LOGIN</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user-circle'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label class="txtbx"><input type="checkbox">Show Password
+                </label>
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <a href="usermain.html" class="btn">Login</a>
+
+            <div class="register-link">
+                <p>Don't have an account? <a href="register.html">Register</a></p>
+            </div>
+
+        </form>
+    </div>
 </body>
 </html>
