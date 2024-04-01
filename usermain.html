@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>usermain</title>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="usermain.css">
+</head>
+<body>
+
+	<div class="sidebar">
+		<div class="top">
+			<div class="logo">
+				<i class="bx bxl-codepen"></i>
+				<span>Dashboard</span>
+			</div>
+			<i class="bx bx-menu" id="btn"></i>
+		</div>
+		<div class="user">
+			<img src="Zombatar_1.jpg" alt="Image" class="user-img">
+			<div>
+				<p class="bold">Andrei E.</p>
+				<p>Admin</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<a href="#">
+					<i class="bx bxs-grid-alt"></i>
+					<span class="nav-item">Dashboard</span>
+				</a>
+				<span class="tooltip">Dashboard</span>
+			</li>
+			<li>
+				<a href="#">
+					<i class="bx bx-user-pin"></i>
+					<span class="nav-item">Profile</span>
+				</a>
+				<span class="tooltip">Profile</span>
+			</li>
+			<li>
+				<a href="#">
+					<i class="bx bx-stats"></i>
+					<span class="nav-item">Statistics</span>
+				</a>
+				<span class="tooltip">Statistics</span>
+			</li>
+			<li>
+				<a href="#">
+					<i class="bx bx-help-circle"></i>
+					<span class="nav-item">Help</span>
+				</a>
+				<span class="tooltip">Help</span>
+			</li>
+			<li>
+				<a href="#">
+					<i class="bx bx-info-circle"></i>
+					<span class="nav-item">About</span>
+				</a>
+				<span class="tooltip">About</span>
+			</li>
+			<li>
+				<a href="#">
+					<i class="bx bx-cog"></i>
+					<span class="nav-item">Settings</span>
+				</a>
+				<span class="tooltip">Settings</span>
+			</li>
+			<li>
+				<a href="#">
+					<i class="bx bxs-log-out"></i>
+					<span class="nav-item">Logout</span>
+				</a>
+				<span class="tooltip">Logout</span>
+			</li>
+		</ul>
+	</div>
+
+	
+</body>
+
+<script type="text/javascript">
+	let btn = document.querySelector('#btn')
+	let sidebar = document.querySelector('.sidebar')
+
+	btn.onclick = function () {
+		sidebar.classList.toggle('active');
+	};
+</script>
+
+</html>
